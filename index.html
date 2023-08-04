@@ -72,7 +72,7 @@ var colortype = document.forms.id_fontForm.colortype.value;
 //テキストボックス内の縁取りカラーを取得する
 var strcolor = document.forms.id_fontForm.strcolor.value;
 //テキストボックス内の縁取り太さを取得する
-var strwidth = document.forms.id_fontForm.strwidth.value;
+//var strwidth = document.forms.id_fontForm.strwidth.value;
 
 //Canvas初期化
 ctx.clearRect(0, 0, w, h);
@@ -96,7 +96,7 @@ ctx.fillText(txt,20,h/2);
 ctx.strokeStyle = strcolor;
 
 //時計の縁取り線の太さを設定する
- ctx.linewidth = strwidth;
+//ctx.linewidth = strwidth;
 
 //時計の縁取りを入れる
 ctx.strokeText(txt,20,h/2);
