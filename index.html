@@ -27,7 +27,6 @@
 フォントサイズ:<input type="text" name="fontsize" value="40" size="3" maxlength="3"><br>
 フォント:<input type="text" name="fonttype" value="Arial" size="20"><br>
 フォントカラー  <input type="color" name="colortype" value="rgb(0,0,0)"><br>
-縁取り線の太さ：<input type="text" name="ｓｔｒwidth" value="2" size="20"><br>
 縁取りカラー  <input type="color" name="strcolor" value="rgb(0,0,0)">
 </form><br>
 フォントはPCにインストールされているフォント名を入力してもらえればそのまま使えるはずです<br>
@@ -71,8 +70,6 @@ var fonttype = document.forms.id_fontForm.fonttype.value;
 var colortype = document.forms.id_fontForm.colortype.value;
 //テキストボックス内の縁取りカラーを取得する
 var strcolor = document.forms.id_fontForm.strcolor.value;
-//テキストボックス内の縁取り太さを取得する
-var strwidth = document.forms.id_fontForm.ｓｔｒwidth.value;
 
 //Canvas初期化
 ctx.clearRect(0, 0, w, h);
@@ -94,9 +91,6 @@ ctx.fillText(txt,20,h/2);
 
 //時計の縁取り色を設定する
 ctx.strokeStyle = strcolor;
-
-//時計の縁取り線の太さを設定する
-//ctx.lineWidth = strwidth;
 
 //時計の縁取りを入れる
 ctx.strokeText(txt,20,h/2);
